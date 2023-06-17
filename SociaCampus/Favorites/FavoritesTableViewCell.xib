@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FavoritesTableViewCell" customModule="SociaCampus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="118" y="20"/>
+        </tableViewCell>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="112" id="Tkf-sF-KLe" customClass="EventsTableViewCell" customModule="SociaCampus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="112"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tkf-sF-KLe" id="OCk-E9-Dix">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="112"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BM6-S0-lGx">
+                        <rect key="frame" x="0.0" y="0.0" width="112" height="112"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="BM6-S0-lGx" secondAttribute="height" multiplier="1:1" id="Ze5-8J-L5x"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="qXP-LV-RqO">
+                        <rect key="frame" x="120" y="8" width="69.333333333333314" height="96"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Etkinlik Türü" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gex-sX-wpP">
+                                <rect key="frame" x="0.0" y="0.0" width="69.333333333333329" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Etkinlik Adı" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="408-4u-hfY">
+                                <rect key="frame" x="0.0" y="21" width="62" height="20.333333333333329"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20.333333333333336" id="LfK-DC-5wB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Konum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5al-Pb-d39">
+                                <rect key="frame" x="0.0" y="48.333333333333336" width="39" height="20.333333333333336"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20.333333333333329" id="3fz-aN-cKt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tarih/Saat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHg-Lf-iHe">
+                                <rect key="frame" x="0.0" y="75.666666666666671" width="56.666666666666664" height="20.333333333333329"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20.333333333333329" id="hCv-ph-aU0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g20-Pg-eEo">
+                        <rect key="frame" x="334.33333333333331" y="8" width="50.666666666666686" height="34.333333333333336"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="">
+                            <imageReference key="image" image="heart.fill" catalog="system" renderingMode="original"/>
+                        </buttonConfiguration>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Tf-c3-BW4">
+                        <rect key="frame" x="322.66666666666669" y="78" width="62.333333333333314" height="26"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Kayıt Ol">
+                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="10"/>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="registerButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="lNi-Hj-aAg"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BM6-S0-lGx" firstAttribute="leading" secondItem="OCk-E9-Dix" secondAttribute="leading" id="2Q4-u1-Bk1"/>
+                    <constraint firstAttribute="bottom" secondItem="qXP-LV-RqO" secondAttribute="bottom" constant="8" id="Cqc-e1-NTp"/>
+                    <constraint firstAttribute="bottom" secondItem="8Tf-c3-BW4" secondAttribute="bottom" constant="8" id="Egl-Bc-lae"/>
+                    <constraint firstItem="g20-Pg-eEo" firstAttribute="top" secondItem="OCk-E9-Dix" secondAttribute="top" constant="8" id="K69-aO-SU4"/>
+                    <constraint firstAttribute="bottom" secondItem="BM6-S0-lGx" secondAttribute="bottom" id="Kwf-SF-rTg"/>
+                    <constraint firstItem="qXP-LV-RqO" firstAttribute="leading" secondItem="BM6-S0-lGx" secondAttribute="trailing" constant="8" id="PH7-zx-rbB"/>
+                    <constraint firstItem="qXP-LV-RqO" firstAttribute="top" secondItem="OCk-E9-Dix" secondAttribute="top" constant="8" id="Vdk-wR-qL2"/>
+                    <constraint firstAttribute="trailing" secondItem="g20-Pg-eEo" secondAttribute="trailing" constant="8" id="iLh-bO-sJi"/>
+                    <constraint firstAttribute="trailing" secondItem="8Tf-c3-BW4" secondAttribute="trailing" constant="8" id="jGj-Uy-MeH"/>
+                    <constraint firstItem="BM6-S0-lGx" firstAttribute="top" secondItem="OCk-E9-Dix" secondAttribute="top" id="n2Q-5a-n5o"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="tintColor" red="0.18823529410000001" green="0.15100408949999999" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="eventImage" destination="BM6-S0-lGx" id="Mar-76-pcm"/>
+                <outlet property="eventLocation" destination="5al-Pb-d39" id="XOU-Yc-awC"/>
+                <outlet property="eventName" destination="408-4u-hfY" id="tQQ-Av-yjI"/>
+                <outlet property="eventType" destination="gex-sX-wpP" id="hpr-w9-RH9"/>
+            </connections>
+            <point key="canvasLocation" x="122.90076335877862" y="124.64788732394366"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="heart.fill" catalog="system" width="128" height="107"/>
+    </resources>
+</document>

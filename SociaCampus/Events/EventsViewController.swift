@@ -15,12 +15,16 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var searchBar: UISearchBar!
     
     var eventArray = [Event]()
-    var favoriteTableData = [Favorite]()
     
     var eventList : [String] = []
     var searchList : [String] = []
     
     private var selectedIndex : Int?
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        getDataFromFirebase()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +34,6 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         eventsTableView.dataSource = self
         searchBar.delegate = self
         
-        getDataFromFirebase()
     }
     
     func getDataFromFirebase() {

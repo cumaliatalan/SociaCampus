@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B184B222A3E2D3F009B064A /* LocalFavoriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B184B212A3E2D3F009B064A /* LocalFavoriteManager.swift */; };
 		410E91022A287D8C0068B7DA /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410E91012A287D8C0068B7DA /* DatabaseManager.swift */; };
 		414C78A12A3081BA00464012 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 414C78A02A3081BA00464012 /* GoogleService-Info.plist */; };
 		414C78A42A308C9D00464012 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 414C78A32A308C9D00464012 /* SDWebImage */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		082BCF24481FD3D749E6254B /* Pods-SociaCampus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SociaCampus.debug.xcconfig"; path = "Target Support Files/Pods-SociaCampus/Pods-SociaCampus.debug.xcconfig"; sourceTree = "<group>"; };
+		1B184B212A3E2D3F009B064A /* LocalFavoriteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFavoriteManager.swift; sourceTree = "<group>"; };
 		410E91012A287D8C0068B7DA /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		414C78A02A3081BA00464012 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		414C78A72A311B4200464012 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 		41DD01DD2A0BA1C800DFEBF9 /* SociaCampus */ = {
 			isa = PBXGroup;
 			children = (
+				1B184B212A3E2D3F009B064A /* LocalFavoriteManager.swift */,
 				410E91012A287D8C0068B7DA /* DatabaseManager.swift */,
 				41527BEF2A2653A200B223C7 /* Segues */,
 				41A05C092A1C03B200EE7F3C /* MainView */,
@@ -362,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41914B242A21233700DBAEF4 /* EventDetailViewController.swift in Sources */,
+				1B184B222A3E2D3F009B064A /* LocalFavoriteManager.swift in Sources */,
 				414C78A92A311B4200464012 /* EventsTableViewCell.swift in Sources */,
 				41914B122A2122A200DBAEF4 /* RegisterViewController.swift in Sources */,
 				41914B272A21235B00DBAEF4 /* CreateEventModel.swift in Sources */,

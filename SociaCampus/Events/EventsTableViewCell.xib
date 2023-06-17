@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -60,12 +61,16 @@
                             </label>
                         </subviews>
                     </stackView>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFE-0n-3nc">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFE-0n-3nc">
                         <rect key="frame" x="334.33333333333331" y="8" width="50.666666666666686" height="34.333333333333336"/>
-                        <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" title="">
-                            <imageReference key="image" image="heart" catalog="system" renderingMode="original"/>
-                        </buttonConfiguration>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50.670000000000002" id="9JW-ex-jso"/>
+                            <constraint firstAttribute="height" constant="34.329999999999998" id="X0s-L4-JwP"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="">
+                            <imageReference key="image" image="heart" catalog="system" symbolScale="default"/>
+                        </state>
                         <connections>
                             <action selector="favoriteButtonAction:" destination="IsR-NU-ssm" eventType="touchUpInside" id="woE-i8-mdf"/>
                         </connections>
@@ -88,6 +93,7 @@
                     <constraint firstItem="jCv-Vv-VvE" firstAttribute="top" secondItem="2yo-fK-pkj" secondAttribute="top" id="SSl-ue-Oz6"/>
                     <constraint firstAttribute="bottom" secondItem="2ly-DE-gRU" secondAttribute="bottom" constant="8" id="UOh-uw-asU"/>
                     <constraint firstItem="fbK-tb-c8f" firstAttribute="top" secondItem="2yo-fK-pkj" secondAttribute="top" constant="8" id="ddT-yf-Th3"/>
+                    <constraint firstItem="2ly-DE-gRU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fbK-tb-c8f" secondAttribute="trailing" constant="20" id="fDP-6r-5ny"/>
                     <constraint firstAttribute="trailing" secondItem="2ly-DE-gRU" secondAttribute="trailing" constant="8" id="m8M-Qy-Y9C"/>
                     <constraint firstItem="HFE-0n-3nc" firstAttribute="top" secondItem="2yo-fK-pkj" secondAttribute="top" constant="8" id="mL0-1B-RNB"/>
                     <constraint firstAttribute="trailing" secondItem="HFE-0n-3nc" secondAttribute="trailing" constant="8" id="ytd-cX-y2Y"/>
@@ -100,6 +106,7 @@
                 <outlet property="eventLocation" destination="wk2-KG-Sc3" id="sbn-qF-nia"/>
                 <outlet property="eventName" destination="MMs-Tw-lhq" id="FQj-qV-oDr"/>
                 <outlet property="eventType" destination="fXl-nb-Qdc" id="a7l-QA-bgL"/>
+                <outlet property="favoriteButton" destination="HFE-0n-3nc" id="FKm-9d-wos"/>
             </connections>
             <point key="canvasLocation" x="122.90076335877862" y="124.64788732394366"/>
         </tableViewCell>
